@@ -1,0 +1,369 @@
+:root {
+    --rojo-figma: #F3184C;
+    --negro-figma: #252239;
+    --gris-figma: #D9D9D9;
+    --gris-oscuro-figma: #8C8E8F;
+    --gris-bg-figma: #FAFAFA;
+    --bs-pagination-active-bg: #F3184C !important;
+}
+
+body {
+    font-family: Sen;
+}
+
+.dropzone.dz-clickable {
+    color: #3E97FF !important;
+    border-color: #3E97FF !important;
+}
+
+
+.tooltip-single {
+    --rt-opacity: 1 !important;
+    transition: none !important;
+    background-color: var(--color--azul-oscuro) !important;
+    border-radius: 0.375rem !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 1.5rem 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.btn-dark-figma {
+    background-color: var(--negro-figma);
+    display: inline-flex !important;
+    height: 35px !important;
+    padding: 10px 10px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.pincode-input-container {
+    width: auto !important;
+    display: flex !important;
+
+    .pincode-input-text {
+        padding: 10px !important;
+        margin: 0 0.2em !important;
+        text-align: center;
+        font-family: Sen !important;
+        border: 1px solid #37344B !important;
+        background: #37344B !important;
+        border-radius: 10px !important;
+        width: 3vw !important;
+        height: 3vw !important;
+        font-size: 2rem !important;
+        color: #757387 !important;
+    }
+
+    .pincode-input-text:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.btn-primary-figma {
+    background-color: var(--rojo-figma);
+    display: inline-flex !important;
+    height: 35px !important;
+    padding: 10px 10px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.btn-outline-figma {
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-flex !important;
+    height: 35px !important;
+    padding: 10px 10px !important;
+    color: var(--gris-oscuro-figma);
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1.5px solid var(--gris-oscuro-figma) !important;
+    border-radius: 8px !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.btn-white-figma {
+    background-color: white;
+    display: inline-flex !important;
+    height: 35px !important;
+    padding: 10px 10px !important;
+    color: var(--gris-oscuro-figma);
+    justify-content: center !important;
+    align-items: center !important;
+
+    border-radius: 8px !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.btn-white-figma:hover {
+    background-color: white;
+    display: inline-flex !important;
+    height: 35px !important;
+    padding: 10px 10px !important;
+    color: var(--gris-oscuro-figma);
+    justify-content: center !important;
+    align-items: center !important;
+
+    border-radius: 8px !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.form-control-solid-dark {
+    background-color: #37344B;
+    border-color: var(--negro-figma);
+    color: #757387;
+
+    transition: color .2s ease;
+}
+
+.form-control-solid-dark:focus {
+    background-color: #37344B;
+    border-color: var(--negro-figma);
+    color: #757387;
+    transition: color .2s ease;
+}
+
+.back-negro-figma {
+    background-color: var(--negro-figma) !important;
+}
+
+.back-negro2-figma {
+    background-color: #37344B !important;
+}
+
+.current {
+    color: black !important;
+}
+
+.pending h3 {
+    color: var(--gris-oscuro-figma) !important;
+}
+
+
+.title_grande {
+    font-size: 35px;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.btn-dark-figma:hover {
+    background-color: var(--rojo-figma);
+}
+
+.color-main-figma {
+    color: var(--negro-figma) !important;
+}
+
+.color-gris-oscuro-figma {
+    color: var(--gris-oscuro-figma) !important;
+}
+
+.text_rojo_figma {
+    color: var(--Rojo, #F3184C) !important;
+    font-family: Sen;
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.text-peq-figma {
+    color: var(--Negro, #252239) !important;
+    font-family: Sen;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.group_td_figma {
+    display: flex;
+    height: 21px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.custom-modal::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.react-datepicker__input-container {
+    width: 50%;
+}
+
+.react-datepicker__input-container input {
+    border: none;
+    background-color: var(--gris-bg-figma);
+    width: 50%;
+
+}
+
+.hidden-select {
+    color: transparent;
+    /* Hace que el texto sea transparente */
+    text-indent: 100%;
+    /* Mueve el texto fuera del área visible */
+    white-space: nowrap;
+    /* Evita que el texto oculto envuelva a la siguiente línea */
+}
+
+.pl-4-custom {
+    padding-left: 4em !important;
+}
+
+.tr_figma {
+
+    height: 48px !important;
+    border-bottom: 1px solid var(--gris-figma) !important;
+    flex-shrink: 0;
+}
+
+.th_style_figma {
+    width: 100% !important;
+    height: 48px !important;
+    padding: 10px 10px 10px 32px !important;
+    flex-direction: column;
+    border-top: 1px solid var(--gris-figma) !important;
+    border-bottom: 1px solid var(--gris-figma) !important;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--gris-bg-figma);
+    margin: 0 !important;
+}
+
+.th_title_figma {
+    color: var(--Gris, #8C8E8F) !important;
+    font-family: Sen;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    /* 208.333% */
+}
+
+.navbar__figma {
+    background-color: #252239 !important;
+    border-radius: 16px;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+
+}
+
+.title__heading_bold {
+    color: var(--negro-figma);
+    font-family: Sen;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.title__muted_grey {
+    color: var(--gris-oscuro-figma);
+    font-family: Sen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 156.25% */
+}
+
+.spacing_menu_items {
+    padding: 10px !important;
+    align-items: center !important;
+    gap: 35px !important;
+}
+
+.rdt_TableHead {
+    padding: 0 !important;
+}
+
+.rdt_TableHeadRow {
+    background-color: transparent !important;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+}
+
+.rdt_Pagination {
+    border: none !important;
+}
+
+.rdt_TableHeadRow {
+    width: 100% !important;
+    height: 78px !important;
+    padding: 10px 10px 10px 32px !important;
+    border-top: 1px solid var(--gris-figma) !important;
+    border-bottom: 1px solid var(--gris-figma) !important;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--gris-bg-figma) !important;
+
+}
+
+.rdt_TableCol_Sortable {
+    background-color: transparent;
+}
+
+.rdt_TableRow {
+    height: 48px !important;
+    border-bottom: 1px solid var(--gris-figma) !important;
+    flex-shrink: 0;
+    padding-left: 2em !important;
+}
+
+.rdt_TableBody {
+    padding: 0 !important;
+}
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-cursor {
+    cursor: url('../../../src/imgs/goldcursor.png'), auto !important;
+}
