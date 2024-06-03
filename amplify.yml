@@ -1,0 +1,22 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+       commands:
+         - npm install
+         - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+  environment:
+    variables:
+      REACT_APP_API_BASE_URL:
+      REACT_APP_MEDIA_URL:
+      REACT_IMAGE_SIZE_ALLOWED:

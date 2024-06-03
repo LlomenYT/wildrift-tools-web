@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add your custom styles here */
+.custom-card {
+    @apply bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg rounded-lg;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: rgba(0, 123, 255, 0.2);
+    filter: blur(10px);
+    z-index: -1;
+    border-radius: inherit;
+}
