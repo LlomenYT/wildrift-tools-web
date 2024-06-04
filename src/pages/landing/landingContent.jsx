@@ -12,7 +12,7 @@ const UsuariosPage = () => {
 
     return (
         <div className='d-flex flex-column min-vh-100 relative custom-cursor'>
-            <img src={imgTop} style={{ height: '20vh', zIndex: -1 }} alt="" />
+            <img src={imgTop} style={{ height: '25vh', zIndex: -1 }} alt="" />
             <div className='d-flex flex-grow-1 flex-column justify-content-center align-items-start absolute top-0 w-full'>
                 <div className="w-100 d-flex justify-content-between align-items-center">
 
@@ -21,17 +21,14 @@ const UsuariosPage = () => {
                         <FlagSelector />
                     </div>
                 </div>
-                <h6 className=' font-bold p-5 col-5' >{languageData.subtlanding}</h6>
-                <br /><br /><br />
-                <div className='d-flex justify-content-center align-items-center  w-full'>
+                <h6 className='font-bold pl-5 col-5 text-md' >{languageData.subtlanding}</h6>
+                <div className='d-flex justify-content-center align-items-center w-full' style={{ height: '35vh' }}>
                     <div className='flex items-center justify-center'>
                         <div className='custom-card p-6 col-lg-12 col-9' style={{ transition: 'opacity 1s ease-in-out', opacity: '1' }}>
                             <h1 className='text-2xl text-white font-bold mb-4'>{languageData.tfarmeandooro}</h1>
                             <p className='mb-4 text-white'>{languageData.subtlategame}</p>
                             <p className='text-white'>{languageData.subtnovedades} <a href="https://x.com/LlomenYT" target='_blank' className='text-red-500 font-bold'>Llomen</a></p>
                         </div>
-
-                        <div className="mt-10"></div>
                     </div>
                 </div>
             </div>
