@@ -5,11 +5,10 @@ import img from '../imgs/bg_fondo.webp';
 
 const MainLayout = () => {
 
-    const [canPlayVideo, setCanPlayVideo] = useState(true);
+    const [canPlayVideo, setCanPlayVideo] = useState(false);
 
     useEffect(() => {
         const videoElement = document.createElement('video');
-
         const canPlayMp4 = videoElement.canPlayType('video/mp4');
         const canPlayWebM = videoElement.canPlayType('video/webm');
         const canPlayOgg = videoElement.canPlayType('video/ogg');
@@ -19,13 +18,11 @@ const MainLayout = () => {
         }
     }, []);
 
-
-
     return (
         <>
             <div className="video-background">
                 {canPlayVideo ? (
-                    <video autoPlay loop muted>
+                    <video autoPlay loop muted playsInline>
                         <source src={video} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
@@ -33,10 +30,10 @@ const MainLayout = () => {
                     <img src={img} alt="background" />
                 )}
             </div>
+
             <div className="content-overlay custom-cursor">
                 <Outlet />
             </div>
-
         </>
     );
 };
