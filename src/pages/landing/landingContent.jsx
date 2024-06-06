@@ -33,7 +33,7 @@ const UsuariosPage = () => {
                 </div>
             </div>
 
-            <footer className=' text-center py-3 mt-auto text-white '>
+            <footer className=' text-center py-3 mt-auto text-white' style={{ backgroundColor: "#37344Bb8" }}>
                 <p>{languageData.footer1} <a href="https://x.com/LlomenYT" target='_blank' className='text-red-500 font-bold'>Llomen</a> © 2024 | {languageData.footer2}</p>
             </footer>
         </div>
